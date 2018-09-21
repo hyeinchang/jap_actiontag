@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>main</title>
 </head>
 <body>
-상단 메뉴:
-<a href="">회사소개</a>
-<a href="">제품소개</a>
+<jsp:forward page="templateTest.jsp">
+	<jsp:param value="content.jsp" name="CONTENTPAGE"/>
+</jsp:forward>
 </body>
 </html>

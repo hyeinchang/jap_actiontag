@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-좌측메뉴:<br>
-<a href="">회사 소개</a><br>
-<a href="">제품 소개</a>
+하하하하...<br>
+내용입니다.
 </body>
 </html>

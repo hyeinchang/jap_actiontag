@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <style>
 	#wrapper {
+		font-family:"굴림";
 		position: absolute;
 		left: 34%;
 		top: 20%;
@@ -39,25 +40,43 @@
 		margin-top: 0.2%;
 		
 	}
+	#top nav {
+		position: relative;
+		top: 25%;
+	}
+	#left nav {
+		position: relative;
+		top: 25%;
+		left: 30%;
+	}
+	#bottom nav {
+		position: relative;
+		top: 25%;
+	}
 </style>
 <title>index</title>
 </head>
 <body>
+	<%String contentPage = request.getParameter("CONTENTPAGE"); %>
 	<div id="wrapper">
 		<header id="top">
 			<nav>
+				<jsp:include page="top.jsp" flush="false"></jsp:include>
 			</nav>
 		</header>
 		<aside id="left">
 			<nav>
+				<jsp:include page="left.jsp" flush="false"></jsp:include>
 			</nav>
 		</aside>
 		<section id="content">
 			<article>
+				<jsp:include page="<%=contentPage%>" flush="false"></jsp:include>
 			</article>
 		</section>
 		<footer id="bottom">
 			<nav>
+				<jsp:include page="bottom.jsp" flush="false"></jsp:include>
 			</nav>
 		</footer>
 	</div>
